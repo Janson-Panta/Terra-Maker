@@ -1,0 +1,91 @@
+<Adm>:
+    Principal:
+
+<Principal>
+
+    MDFloatLayout:
+
+        Image:
+            source:"fundo.png"
+            allow_stretch : True
+            keep_ratio : False
+            pos_hint:{"center_x": 0.5, "center_y":0.5}
+
+        MDLabel:
+            id: label1
+            text:"Dan"
+            font_size: "15sp"
+            bold: True
+            pos_hint:{"center_x": 0.96, "center_y":0.80}
+
+        MDIconButton:
+            icon: "arrow-right-bold-circle"
+            user_font_size: "64sp"
+            pos_hint:{"center_x": 0.5, "center_y":0.75}
+            on_press:
+                root.mudar1()
+
+
+
+###############################################################################
+        MDLabel:
+            id: label2
+            text:"gar"
+            font_size: "15sp"
+            bold: True
+            pos_hint:{"center_x": 0.96, "center_y":0.65}
+
+
+        MDIconButton:
+            icon: "arrow-right-bold-circle"
+            user_font_size: "64sp"
+            pos_hint:{"center_x": 0.5, "center_y":0.60}
+            on_press:
+                root.mudar2()
+
+################################################################################
+        MDLabel:
+            id: label3
+            text:"ann"
+            font_size: "15sp"
+            bold: True
+            pos_hint:{"center_x": 0.96, "center_y":0.50}
+
+        MDIconButton:
+            icon: "arrow-right-bold-circle"
+            user_font_size: "64sp"
+            pos_hint:{"center_x": 0.5, "center_y":0.45}
+            on_press:
+                root.mudar3()
+
+
+#################################################################################
+
+        MDRaisedButton:
+            text:"Formar"
+            bold: True
+            pos_hint:{"center_x": 0.5, "center_y":0.32}
+            on_press:
+                root.forma()
+
+        MDLabel:
+            id: label4
+            text:" "
+            font_size: "60sp"
+            bold: True
+            font_name:"Tangerine-Bold.ttf"
+            pos_hint:{"center_x": 0.70, "center_y":0.19}
+
+        MDIconButton:
+            icon: "delete-circle"
+            user_font_size: "64sp"
+            pos_hint:{"center_x": 0.5, "center_y":0.10}
+            on_press:
+                root.limpa()
+
+        MDRaisedButton:
+            text:"Sair"
+            bold: True
+            pos_hint:{"center_x": 0.15, "center_y":0.10}
+            on_press:
+                app.fechar()
